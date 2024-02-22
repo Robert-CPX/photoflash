@@ -66,7 +66,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        geologica: ["var(--font-geologica)"],
+        georama: ["var(--font-georama)"],
       },
       backgroundImage: {
         "purple-gradient": "url('/assets/images/gradient-bg.svg')",

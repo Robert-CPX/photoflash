@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Geologica } from "next/font/google";
+import { Georama } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ClerkProvider } from "@clerk/nextjs";
 
-const geologica = Geologica({
-  subsets: ["cyrillic"],
+const georama = Georama({
+  subsets: ["latin"],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-geologica',
+  variable: '--font-georama',
 });
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
       variables: { colorPrimary: '#0E0AE6' }
     }}>
       <html lang="en">
-        <body className={cn("font-geologica antialiased", geologica.variable)}>{children}</body>
+        <body className={cn("font-georama antialiased", georama.variable)}>{children}</body>
       </html>
     </ClerkProvider >
   );
